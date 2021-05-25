@@ -18,6 +18,7 @@ class TestCompareResult(unittest.TestCase):
             'empty_failed': '!empty',
         }
         result = compare(json_2, json_1)
+
         verify = {
             'aa': {'Хотели': True, 'Получили': "Поля 'aa' нет в ответе"},
             'b': {'Хотели': 4, 'Получили': 2},
